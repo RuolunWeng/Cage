@@ -1,0 +1,17 @@
+{
+  "name": "cage",
+  "version": "1.0.0",
+  "description": "src for installation CAGE",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "Allen",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "4.17.1",
+    "node-osc": "^4.1.4",
+    "nodemon": "2.0.2",
+    "socket.io": "1.7.3"
+  }
+}

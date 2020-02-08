@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>cage debug</title>
+</head>
+
+<body>
+    <script src="../lib/p5.min.js"></script>
+    <script src="../lib/p5.dom.min.js"></script>
+    <script src="../lib/socket.io-1.2.0.js"></script>
+    <script>
+        let button;
+        var socket = io();
+    function setup() {
+        createCanvas(window.innerWidth,window.innerHeight);
+        button = createButton('reset');
+        button.position( window.innerWidth /2  , window.innerHeight /2);
+        button.size(150,150);
+        button.mousePressed(sendResetBackground);
+        socket = io.connect(window.location.hostname + ":5000");
+    }
+    function sendResetBackground(){
+        socket.emit("reset-bg");
+    }
+        
+    </script>
+</body>
+
+</html>
