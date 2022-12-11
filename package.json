@@ -9,7 +9,7 @@
   "author": "Allen",
   "license": "ISC",
   "devDependencies": {
-    "express": "4.17.1",
+    "express": "4.17.3",
     "node-osc": "^4.1.4",
     "nodemon": "2.0.2",
     "socket.io": "1.7.3"
